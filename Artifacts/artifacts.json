@@ -1,0 +1,17 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Azure/azure-devtestlab/master/schemas/2016-11-01/dtlArtifact.json",
+  "title": "Join VM to Microsoft Entra ID",
+  "description": "Installs AADLoginForWindows to enable Entra ID authentication",
+  "publisher": "Microsoft",
+  "tags": [
+    "Entra ID",
+    "Azure AD",
+    "Authentication",
+    "Windows"
+  ],
+  "targetOsType": "Windows",
+  "parameters": {},
+  "runCommand": {
+    "commandToExecute": "powershell -ExecutionPolicy Bypass -Command \"Write-Host 'AAD Login extension will be applied by ARM'\""
+  }
+}
